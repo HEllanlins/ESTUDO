@@ -1,0 +1,104 @@
+body {
+    max-width: 1450px; /* Limita a largura máxima */
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    display: block; /* Corrigido de 'auto' para 'block' */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px; /* Tamanho da fonte padrão */
+    background-image: url(/imagens/17.jpg);
+    background-size: cover; /* Faz a imagem de fundo cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem de fundo */
+    color: #a1a1a1;
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.container {
+    background: #0000008c;
+    border: 5px solid #686868;
+    border-radius: 30px;
+    padding: 2%;
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+.image-group {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+    justify-content: center;
+}
+
+.footer {
+    width: 100%; /* Largura total */
+    max-width: 350px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o footer */
+}
+
+.Portifolio,
+.Matriz,
+.eu {
+    width: 100%; /* Largura total */
+    max-width: 280px; /* Largura máxima */
+}
+
+.eu {
+    border-radius: 15%;
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.877));
+}
+
+a{
+    text-decoration: none;
+    color: #b700ff;
+}
+
+a:hover{
+    color: #00f870;
+    transition: 1.5s;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+        width: 100%;
+        margin:auto;
+        padding: 0; /* Remove preenchimento padrão */
+    }
+
+    .container {
+        padding: 5%; /* Aumenta o preenchimento em telas menores */
+    }
+
+    .footer {
+        max-width: 90%; /* Largura máxima do footer em telas menores */
+    }
+
+    .Portifolio,
+    .Matriz,
+    .eu {
+        max-width: 90%; /* Largura máxima em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; /* Reduz ainda mais o tamanho da fonte */
+        width: 90%;
+        padding: 0; /* Remove preenchimento padrão */
+    }
+
+    .container {
+        padding: 10%; /* Aumenta o preenchimento em telas muito pequenas */
+    }
+
+    .footer {
+        max-width: 100%; /* Largura total em telas muito pequenas */
+    }
+
+    .Portifolio,
+    .Matriz,
+    .eu {
+        max-width: 100%; /* Largura total em telas muito pequenas */
+    }
+}
