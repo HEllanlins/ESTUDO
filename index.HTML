@@ -5,11 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="script/index.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="favicon_io/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="favicon_io/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Projeto ESTUDO Udemy</title>
 </head>
 
 <body>
-    <div class="inicio">
+
+    <header class="header">
+        <a href="#" class="logo">Hellan</a>
+
+        <nav class="navbar">
+            <a href="#inicio">Inicio</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#sobremim">Sobre mim</a>
+        </nav>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <div class="inicio" id="inicio">
         <h1>Tela de Projeto ESTUDO</h1>
         <p>Sejam todos bem vindos a minha tela!</p>
     </div>
@@ -19,20 +37,20 @@
         <h1>Nossos Projetos</h1>
         <p>Segue abaixo nossos projetos</p>
         <div class="image-group">
-            <div>
-                <img src="imagens/Brincando com footer.png" alt=" Footer " class="footer"><br>footer
-            </div>
-            <a href="https://portifoliohellan.netlify.app/" target="_blank">
+            <a href="https://darkorchid-ant-529005.hostingersite.com/" target="_blank" class="a">
+                <img src="imagens/Site incrivel.png" alt=" Arkone " class="Arkone"><br>ArkOne
+            </a>
+            <a href="https://portifoliohellan.netlify.app/" target="_blank" class="a">
                 <img src="imagens/meu primeiro portifolio.png" alt=" Portifólio " class="Portifolio"><br>Portifólio Hellan
             </a>
-            <a href="https://portifoliobm.netlify.app/" target="_blank">
+            <a href="https://portifoliobm.netlify.app/" target="_blank" class="a">
                 <img src="imagens/portifolio da matriz.png" alt=" Matriz de construtores " class="Matriz"><br>Portifólio Matriz
             </a>
         </div>
     </div>
     <br>
 
-    <div class="Sobre-Projetos">
+    <div class="Sobre-Projetos" id="projetos">
         <h1>Mais sobre os projetos</h1>
         <h3> Footer </h3>
         <p>O Footer foi uma grande oportunidade de aprender sobre posicionamento e personalização de forma mais
@@ -51,7 +69,7 @@
     </div>
     <br>
 
-    <div class="texto-sobre-mim">
+    <div class="texto-sobre-mim" id="sobremim">
         <h1>Um pouco sobre mim</h1>
         <img src="imagens/Captura de tela 2024-11-18 174213.png" alt="Eu" class="eu">
         <p>Sou desenvolvedor full-stack, gosto de jogar video-games e ouvir musica constante mente, busco sempre me
@@ -60,8 +78,14 @@
             começei a faculdade, passei a me comunicar com as pessoas e a criar novas amizades.</p><br>
         <h2>Clique no link para ir aos portifólios. ↓ 🙃</h2>
         <ul type="square">
-            <li><a href="https://portifoliohellan.netlify.app/">Portifólio Hellan.</a></li>
-            <li><a href="https://portifoliobm.netlify.app/">Portifólio Matriz de construtores.</a></li>
+            <li><a href="https://portifoliohellan.netlify.app/" class="a1">Portifólio Hellan.</a></li>
+            <li><a href="https://portifoliobm.netlify.app/" class="a1">Portifólio Matriz de construtores.</a></li>
+            <h3>Redes Sociais ↓</h3>
+            <ul type="square">
+                <li><a href="https://www.instagram.com/hellan_lins/" target="_blank" class="a2"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.youtube.com/@hellanlins3042" target="_blank" class="a3"><i class="fab fa-youtube"></i> Youtube</a></li>
+                <li><a href="https://www.linkedin.com/in/hellan-nascimento-a40384291/" target="_blank" class="a4"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+            </ul>
         </ul>
     </div>
 

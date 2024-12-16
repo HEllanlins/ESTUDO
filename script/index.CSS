@@ -1,23 +1,112 @@
+:root {
+    --bg-color: #fdfdfd;
+    --text-color: #333;
+    --main-color: #009b74;
+    --white-color: #ffffff;
+    --shadow-color: rgba(0, 0, 0, .2);
+}
+
+*::selection {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+
+
+
 body {
     max-width: 1450px; /* Limita a largura máxima */
-    width: 100%; /* Largura total */
+    width: 80%; /* Largura total */
     height: 100%; /* Altura total */
     display: block; /* Corrigido de 'auto' para 'block' */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px; /* Tamanho da fonte padrão */
-    background-image: url(/imagens/17.jpg);
-    background-size: cover; /* Faz a imagem de fundo cobrir todo o espaço */
-    background-position: center; /* Centraliza a imagem de fundo */
-    color: #a1a1a1;
+    background: linear-gradient(to right, #7500b81c, #5900ff60, #00c3ff);
+    background-color: #000;
+    color: #d6d6d6;
     margin: 0; /* Remove margens padrão */
     padding: 0; /* Remove preenchimento padrão */
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 10em;
+    padding-bottom: 2rem;
+    padding-top: 5rem;
 }
+
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 4%;
+    background: linear-gradient(to right, #7500b800, #5900ff54, #00c3ff);
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    transition: .5s;
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--main-color);
+    font-weight: 600;
+    margin-right: 80rem;
+    text-decoration: none;
+}
+
+.logo:hover{
+    color: #00ffbf;
+    transition: 1.5s;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 1.7rem;
+    color: #000;
+    font-weight: 500;
+    margin-right: 3.5rem;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color:#ffffff;
+    transition: 0.2s;
+}
+
+.header.sticky .navbar a {
+    color: var(--text-color);
+}
+
+.header.sticky .navbar a:hover{
+    color:#04a3ff;
+    transition: 0.2s;
+}
+
+.header.sticky .navbar a.active {
+    color: var(--main-color);
+}
+
+.navbar a.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: .2rem;
+    background: var(--white-color);
+}
+
+.header.sticky .navbar a::before {
+    background: var(--main-color);
+    opacity: .7;
+}
+
+
+
 
 .container {
     background: #0000008c;
-    border: 5px solid #686868;
+    border: 5px solid #000000;
     border-radius: 30px;
     padding: 2%;
     margin: 0 auto; /* Centraliza o contêiner */
@@ -29,9 +118,9 @@ body {
     justify-content: center;
 }
 
-.footer {
+.Arkone {
     width: 100%; /* Largura total */
-    max-width: 350px; /* Largura máxima */
+    max-width: 281px; /* Largura máxima */
     margin: 0 auto; /* Centraliza o footer */
 }
 
@@ -44,17 +133,64 @@ body {
 
 .eu {
     border-radius: 15%;
-    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.877));
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.055), rgb(0, 0, 0));
 }
 
-a{
+.a{
     text-decoration: none;
-    color: #b700ff;
+    color: #00cf80;
 }
 
-a:hover{
-    color: #00f870;
+.a:hover{
+    color: #00d9ff;
     transition: 1.5s;
+}
+
+.a1{
+    text-decoration: none;
+    color: #00cf80;
+}
+
+.a1:hover{
+    color: #00d9ff;
+    transition: 1.5s;
+}
+
+.fab {
+    text-decoration: none;
+    color: #00cf80;
+}
+
+.a2{
+background-image: linear-gradient(to right, rgb(255, 0, 221), rgb(255, 174, 0), rgb(162, 0, 255));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.a2:hover {
+    background-image: linear-gradient(to left, rgb(255, 166, 0), rgb(247, 0, 255), rgb(162, 0, 255)); /* Inverte o degradê */
+    transition: all 1.5s ease; /* Adiciona transição para efeito suave */
+}
+
+.a3{
+    text-decoration: none;
+    color: #ff0202;
+}
+
+.a4{
+    text-decoration: none;
+    color: #0066ff;
+}
+
+.a3:hover,
+.a4:hover{
+    color: #00d9ff;
+    transition: 1.5s;
+}
+
+.li1{
+    color: #fff;
 }
 
 /* Media Queries para Responsividade */
