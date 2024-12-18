@@ -9,11 +9,10 @@
 *::selection {
     background: var(--main-color);
     color: var(--bg-color);
-}
+}/*********************************************************************************************************/
 
 
-
-
+/******************************************BODY**************************************************/
 body {
     max-width: 1450px; /* Limita a largura máxima */
     width: 80%; /* Largura total */
@@ -30,9 +29,9 @@ body {
     padding-bottom: 2rem;
     padding-top: 5rem;
 }
+/*******************************************BODY***********************************************/
 
-
-
+/*******************************************CABEÇALHO********************************************/
 .header {
     position: fixed;
     top: 0;
@@ -70,7 +69,7 @@ body {
 
 .navbar a:hover{
     color:#ffffff;
-    transition: 0.2s;
+    transition: 0.8s;
 }
 
 .header.sticky .navbar a {
@@ -100,10 +99,10 @@ body {
     background: var(--main-color);
     opacity: .7;
 }
+/***************************************************FIM DO CABEÇALHO*********************************************/
 
 
-
-
+/**************************************************Projetos******************************************************/
 .container {
     background: #0000008c;
     border: 5px solid #000000;
@@ -130,7 +129,10 @@ body {
     width: 100%; /* Largura total */
     max-width: 280px; /* Largura máxima */
 }
+/*****************************************************FIM DOS PROJETOS*********************************************/
 
+
+/*****************************************************SOBRE MIM***************************************************/
 .eu {
     border-radius: 15%;
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.055), rgb(0, 0, 0));
@@ -145,55 +147,41 @@ body {
     color: #00d9ff;
     transition: 1.5s;
 }
+/*****************************************************SOBRE MIM***************************************************/
 
-.a1{
+
+/*****************************************************LINKS***************************************************/
+.divul{
+    width: 200px;
+}
+
+.ul{
+    margin:0;
+    padding:0;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    display:block;
     text-decoration: none;
-    color: #00cf80;
-}
-
-.a1:hover{
-    color: #00d9ff;
-    transition: 1.5s;
-}
-
-.fab {
-    text-decoration: none;
-    color: #00cf80;
-}
-
-.a2{
-background-image: linear-gradient(to right, rgb(255, 0, 221), rgb(255, 174, 0), rgb(162, 0, 255));
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-
-.a2:hover {
-    background-image: linear-gradient(to left, rgb(255, 166, 0), rgb(247, 0, 255), rgb(162, 0, 255)); /* Inverte o degradê */
-    transition: all 1.5s ease; /* Adiciona transição para efeito suave */
-}
-
-.a3{
-    text-decoration: none;
-    color: #ff0202;
-}
-
-.a4{
-    text-decoration: none;
-    color: #0066ff;
-}
-
-.a3:hover,
-.a4:hover{
-    color: #00d9ff;
-    transition: 1.5s;
-}
-
-.li1{
+    background-color: rgba(105, 105, 105, 0.425);
+    margin-bottom: 1px;
+    padding: 5px 3px;
     color: #fff;
 }
 
-/* Media Queries para Responsividade */
+li a:hover {
+    background-color: #00ffbf;
+    color: #000;
+    transition: 0.8s
+}
+/*****************************************************LINKS***************************************************/
+
+
+/*****************************************************RESPONSIVIDADE***************************************************/
 @media (max-width: 768px) {
     body {
         font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
@@ -238,3 +226,4 @@ background-clip: text;
         max-width: 100%; /* Largura total em telas muito pequenas */
     }
 }
+/*****************************************************RESPONSIVIDADE***************************************************/
