@@ -70,7 +70,7 @@ body {
 
 .navbar a:hover{
     color:#ffffff;
-    transition: 0.2s;
+    transition: 0.8s;
 }
 
 .header.sticky .navbar a {
@@ -146,52 +146,39 @@ body {
     transition: 1.5s;
 }
 
-.a1{
+
+
+
+.divul{
+    width: 200px;
+}
+
+.ul{
+    margin:0;
+    padding:0;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    display:block;
     text-decoration: none;
-    color: #00cf80;
-}
-
-.a1:hover{
-    color: #00d9ff;
-    transition: 1.5s;
-}
-
-.fab {
-    text-decoration: none;
-    color: #00cf80;
-}
-
-.a2{
-background-image: linear-gradient(to right, rgb(255, 0, 221), rgb(255, 174, 0), rgb(162, 0, 255));
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-
-.a2:hover {
-    background-image: linear-gradient(to left, rgb(255, 166, 0), rgb(247, 0, 255), rgb(162, 0, 255)); /* Inverte o degradê */
-    transition: all 1.5s ease; /* Adiciona transição para efeito suave */
-}
-
-.a3{
-    text-decoration: none;
-    color: #ff0202;
-}
-
-.a4{
-    text-decoration: none;
-    color: #0066ff;
-}
-
-.a3:hover,
-.a4:hover{
-    color: #00d9ff;
-    transition: 1.5s;
-}
-
-.li1{
+    background-color: rgba(105, 105, 105, 0.425);
+    margin-bottom: 1px;
+    padding: 5px 3px;
     color: #fff;
 }
+
+li a:hover {
+    background-color: #00ffbf;
+    color: #000;
+    transition: 0.8s
+}
+
+
+
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
