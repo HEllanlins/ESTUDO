@@ -9,26 +9,36 @@
 *::selection {
     background: var(--main-color);
     color: var(--bg-color);
-}/*********************************************************************************************************/
+}
+
+/*********************************************************************************************************/
 
 
 /******************************************BODY**************************************************/
 body {
-    max-width: 1450px; /* Limita a largura máxima */
-    width: 80%; /* Largura total */
-    height: 100%; /* Altura total */
-    display: block; /* Corrigido de 'auto' para 'block' */
+    max-width: 1450px;
+    /* Limita a largura máxima */
+    width: 80%;
+    /* Largura total */
+    height: 100%;
+    /* Altura total */
+    display: block;
+    /* Corrigido de 'auto' para 'block' */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px; /* Tamanho da fonte padrão */
+    font-size: 15px;
+    /* Tamanho da fonte padrão */
     background: linear-gradient(to right, #7500b81c, #5900ff60, #00c3ff);
     background-color: #000;
     color: #d6d6d6;
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove preenchimento padrão */
+    margin: 0;
+    /* Remove margens padrão */
+    padding: 0;
+    /* Remove preenchimento padrão */
     padding-left: 10em;
     padding-bottom: 2rem;
     padding-top: 5rem;
 }
+
 /*******************************************BODY***********************************************/
 
 /*******************************************CABEÇALHO********************************************/
@@ -53,7 +63,7 @@ body {
     text-decoration: none;
 }
 
-.logo:hover{
+.logo:hover {
     color: #00ffbf;
     transition: 1.5s;
 }
@@ -67,8 +77,8 @@ body {
     text-decoration: none;
 }
 
-.navbar a:hover{
-    color:#ffffff;
+.navbar a:hover {
+    color: #ffffff;
     transition: 0.8s;
 }
 
@@ -76,8 +86,8 @@ body {
     color: var(--text-color);
 }
 
-.header.sticky .navbar a:hover{
-    color:#04a3ff;
+.header.sticky .navbar a:hover {
+    color: #04a3ff;
     transition: 0.2s;
 }
 
@@ -99,52 +109,63 @@ body {
     background: var(--main-color);
     opacity: .7;
 }
+
 /***************************************************FIM DO CABEÇALHO*********************************************/
 
 
 /***************************************************INICIO******************************************************/
-.inicio{
+.inicio {
     padding-top: 4rem;
 }
+
 /***************************************************INICIO******************************************************/
 
 
 /**************************************************Projetos******************************************************/
-.projects{
-    padding-top:5rem;
+.projects {
+    padding-top: 5rem;
 }
 
 .container {
     background: linear-gradient(to right, #00c3ff83, #5900ff0e, #6800a5ab);
-
     border-radius: 30px;
     padding: 2%;
-    margin: 0 auto; /* Centraliza o contêiner */
+    margin: 0 auto;
+    /* Centraliza o contêiner */
 }
 
 .image-group {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+    flex-wrap: wrap;
+    /* Permite que os itens se movam para a próxima linha */
     justify-content: center;
 }
 
 .Arkone {
-    width: 100%; /* Largura total */
-    max-width: 281px; /* Largura máxima */
-    margin: 0 auto; /* Centraliza o footer */
+    width: 100%;
+    /* Largura total */
+    max-width: 281px;
+    /* Largura máxima */
+    margin: 0 auto;
+    /* Centraliza o footer */
 }
 
 .Portifolio,
 .Matriz,
-.eu {
-    width: 100%; /* Largura total */
-    max-width: 280px; /* Largura máxima */
+.Arkone,
+.eu,
+.Inove {
+    width: 100%;
+    /* Largura total */
+    max-width: 280px;
+    /* Largura máxima */
 }
+
 /*****************************************************FIM DOS PROJETOS*********************************************/
 
 
 /*****************************************************SOBRE MIM***************************************************/
-.texto-sobre-mim{
+.texto-sobre-mim {
     padding-top: 4rem;
 }
 
@@ -153,26 +174,27 @@ body {
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.055), rgb(0, 0, 0));
 }
 
-.a{
+.a {
     text-decoration: none;
     color: #00cf80;
 }
 
-.a:hover{
+.a:hover {
     color: #00d9ff;
     transition: 1.5s;
 }
+
 /*****************************************************SOBRE MIM***************************************************/
 
 
 /*****************************************************LINKS***************************************************/
-.divul{
+.divul {
     width: 200px;
 }
 
-.ul{
-    margin:0;
-    padding:0;
+.ul {
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -180,7 +202,7 @@ li {
 }
 
 li a {
-    display:block;
+    display: block;
     text-decoration: none;
     background-color: rgba(105, 105, 105, 0.425);
     margin-bottom: 1px;
@@ -193,32 +215,104 @@ li a:hover {
     color: #000;
     transition: 0.8s
 }
+
 /*****************************************************LINKS***************************************************/
 
 
 /****************************************************TABELAS**************************************************/
-.tabela{
-    padding-top:5rem;
+caption {
+    background-color: rgb(0, 43, 56);
+    color: #969696;
+    border: 2px solid #7a7a7ad0;
 }
 
-table{
+.h11{
+    color: #00c3ff;
+}
+
+.tabela {
+    padding-top: 5rem;
+}
+
+table {
     background: rgb(0, 43, 56);
     box-shadow: 0px 10px 20px 0px rgb(0, 0, 0.7);
 }
 
 .tds {
-    padding: 3px;
+    padding: 4px 12px;
 }
+
+.coluna1 {
+    background-color: rgb(0, 31, 88);
+}
+
 /****************************************************TABELAS**************************************************/
 
+/****************************************************FORMULARIO***********************************************/
+.divh2 {
+    color: #00c3ff;
+}
+
+form {
+    max-width: 470px;
+    padding: 20px 50px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    padding-right: 80px;
+    background: linear-gradient(to right, #00c3ff9c, #5900ff73, #9300e9bb);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #dfdfdf;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #00000000;
+    border-radius: 100px;
+    background-color: #1a1a1a;
+    color: #acacac;
+}
+
+.required {
+    color: rgb(192, 1, 1);
+    /* Cor do asterisco */
+    font-size: 12px;
+    padding-left: 3px;
+}
+
+.enviar{
+    background-color: #0099ff;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    width: 490px;
+}
+
+.enviar:hover{
+    background-color: #007a66;
+    color: #67edff;
+    transition: 1.2s;
+}
+
+/****************************************************FORMULARIO***********************************************/
 
 /*****************************************************RESPONSIVIDADE***************************************************/
 @media (max-width: 1300px) {
     body {
-        font-size: 20px; /* Reduz o tamanho da fonte em telas menores */
+        font-size: 20px;
+        /* Reduz o tamanho da fonte em telas menores */
         width: 90%;
-        margin:auto;
-        padding: 0; /* Remove preenchimento padrão */
+        margin: auto;
+        padding: 0;
+        /* Remove preenchimento padrão */
     }
 
     .header {
@@ -235,31 +329,38 @@ table{
         color: #00fff2;
     }
 
-    .inicio{
+    .inicio {
         padding-top: 10rem;
     }
 
     .container {
-        padding: 5%; /* Aumenta o preenchimento em telas menores */
+        padding: 5%;
+        /* Aumenta o preenchimento em telas menores */
     }
 
     .Arkone {
-        max-width: 90%; /* Largura máxima do footer em telas menores */
+        max-width: 90%;
+        /* Largura máxima do footer em telas menores */
     }
 
     .Portifolio,
     .Matriz,
-    .eu {
-        max-width: 90%; /* Largura máxima em telas menores */
+    .Arkone,
+    .eu,
+    .Inove {
+        max-width: 90%;
+        /* Largura máxima em telas menores */
     }
 }
 
 @media (max-width: 768px) {
     body {
-        font-size: 20px; /* Reduz o tamanho da fonte em telas menores */
+        font-size: 20px;
+        /* Reduz o tamanho da fonte em telas menores */
         width: 100%;
-        margin:auto;
-        padding: 0; /* Remove preenchimento padrão */
+        margin: auto;
+        padding: 0;
+        /* Remove preenchimento padrão */
     }
 
     .header {
@@ -275,30 +376,42 @@ table{
         font-size: 0.5rem;
     }
 
-    .inicio{
+    .inicio {
         padding-top: 6rem;
     }
 
     .container {
-        padding: 5%; /* Aumenta o preenchimento em telas menores */
+        padding: 5%;
+        /* Aumenta o preenchimento em telas menores */
     }
 
     .footer {
-        max-width: 90%; /* Largura máxima do footer em telas menores */
+        max-width: 90%;
+        /* Largura máxima do footer em telas menores */
     }
 
     .Portifolio,
     .Matriz,
-    .eu {
-        max-width: 90%; /* Largura máxima em telas menores */
+    .Arkone,
+    .eu,
+    .Inove {
+        max-width: 90%;
+        /* Largura máxima em telas menores */
+    }
+
+    .enviar{
+        width: 275px;
     }
 }
 
 @media (max-width: 480px) {
     body {
-        font-size: 12px; /* Reduz ainda mais o tamanho da fonte */
+        font-size: 12px;
+        /* Reduz ainda mais o tamanho da fonte */
         width: 90%;
-        padding: 0; /* Remove preenchimento padrão */
+        margin: auto;
+        padding: auto;
+        /* Remove preenchimento padrão */
     }
 
     .header {
@@ -314,22 +427,32 @@ table{
         font-size: 0.5rem;
     }
 
-    .inicio{
+    .inicio {
         padding-top: 6rem;
     }
 
     .container {
-        padding: 10%; /* Aumenta o preenchimento em telas muito pequenas */
+        padding: 10%;
+        /* Aumenta o preenchimento em telas muito pequenas */
     }
 
     .footer {
-        max-width: 100%; /* Largura total em telas muito pequenas */
+        max-width: 100%;
+        /* Largura total em telas muito pequenas */
     }
 
     .Portifolio,
     .Matriz,
-    .eu {
-        max-width: 100%; /* Largura total em telas muito pequenas */
+    .Arkone,
+    .eu,
+    .Inove {
+        max-width: 100%;
+        /* Largura total em telas muito pequenas */
+    }
+
+    .enviar{
+        width: auto;
     }
 }
+
 /*****************************************************RESPONSIVIDADE***************************************************/
